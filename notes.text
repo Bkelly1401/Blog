@@ -1,0 +1,191 @@
+Frontend: Javascript > React(ui design from JS library) > Typescript ?> Vue.
+Serverside: NodeJS > NestJS
+Database: MySQL > PostgreSQL > Redis ?> MongoDB
+CSS: Tailwind > Sass ?> Bootstrap.
+Webserver: NGINX or Apache.
+Infrastructure(database / web host): AWS > RDS ?> Azure
+Host sourcecode: Github
+
+Webhost: Bluehost? any really.
+Tools: Docker(contain all code for clowd server deployment), Npm.
+API: Rest(Makes safer SQL queries, good for client > api), Payments(stripe) Messages(Twilio) Sendgrid(Email)
+
+
+ALB, ECS, RDS, S3, Lambda, Terraform.
+
+
+MEAN Stack:MongoDB(Database), Express.js(backend), Angular(frontend), Node.js(testing)
+MERN Stack: Swap Angular out with React.
+-Vue path
+Vue (ui design from JS with a html foundation entire framework) 
+Composition api? (API for authoring components using imported functions instead of declaration?)
+Pinia (storage library for components / pages, allowing you to share states)
+Vite (converts JS, TS, vue, react etc for the browser to understand)
+Vitest / Jest (javascript testing framework)
+Bundlers are used to compile multiple documents for a larger application that have dependencies. 
+uglify-js - parses and minimises javascript.
+
+
+
+
+
+
+
+--h1: bold 54px/64px var(--ff);
+--h1: bold max(36px, 4vw) / max(48px, 5vw) var(--ff);
+
+<h2>This website will serve as my attempt to share the importance of optimising the way that you spend your money, educate people on how to do their own qualitative research, and if all else fails provide a tailored list of educated choices to save you from falling into the rabithole of mindless consumption and padding the pockets of corporations that rely on gimmick and marketing to sell you products that are less desirable, less valuable, and less fitting of your needs.</h2>
+.home-cards{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.home-cards > * {
+  flex: 1;
+  min-width: 200px;
+}
+
+.home-card {
+  background-color: var(--colorsecondary);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  padding: 20px 28px 40px 28px;
+}
+.dark-shadow {
+  box-shadow: var(--shadowdark);
+}
+ <div class="home-card"></div>
+       <div class="home-card dark-shadow"></div>
+       <div class="home-card"></div>
+
+  <div class="navbar">
+      <ul>
+      <li><img src="images/logo.svg" alt="Website logo" width="200"></img></li>
+      <div class="rightnav"><li><a href="index.html">Home</a></li>
+      <li><a href="mousepads.html">Mousepads</a></li>
+      <li><a href="mice.html">Gaming mice</a></li>
+      <li><a href="headphones.html">Headphones</a></li>
+      <li><a href="keyboards.html">Keyboards</a></li>
+      <li><div class="dropdown"><button class="dropbtn">About</button>
+          <div class="dropdown-content">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Link 3</a>
+      </li>
+      </ul>
+      </div>
+    </div>
+
+
+<nav class="navbar">
+      <ul>
+      <li><img class="navImage" src="images/logo.svg" alt="Website logo." width="70#'"></img></li>
+      <div class="rightnav"><li><a href="index.html">Home</a>
+      <li><a href="mousepads.html">Mousepads</a></li>
+      <li><a href="mice.html">Gaming mice</a></li>
+      <li><a href="headphones.html">Headphones</a></li>
+      <li><a href="keyboards.html">Keyboards</a></li>
+      <li><div class="dropdown"><button class="dropbtn">About</button>
+          <div class="dropdown-content">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Link 3</a>
+      </li>
+      </ul>
+    </div>
+    </nav>
+    .navbar{
+  ul {
+      display:block;
+      list-style-type: none;
+      margin-top: -1.7em;
+      background-color: /*transparent*/ #121112; 
+      }
+      li {
+        float: left;
+      }
+      li a {
+      display: block;
+      color: aliceblue;
+      text-align: center;
+      padding: 21px 35px;
+      text-decoration: none;
+      }
+      li a:hover {
+      background-color: #121112;
+      padding:21px 35px;
+     }  
+}
+.navbar::before {
+content: '.';
+background: var(--clr-two);
+}
+.navbar li::before {
+content: '.';
+background: var(--clr-two);
+}
+.rightnav{
+float: right;
+text-align: center;
+text-decoration: none;
+}
+.dropbtn {
+display: block;
+color: aliceblue;
+background-color: #121112;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  font-size: 1em;
+  text-align: center;
+  padding: 21px 35px;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #111;
+min-width: 160px;
+box-shadow: 30px 16px 32px 30px rgba(0, 0, 0, 0.2);
+z-index: 1;
+} /* ^^^^^ dropdown tab edit this to change the drop down list */
+
+.dropdown:hover .dropdown-content {
+display: block;
+} /* ^this is how you edit the extension window display */
+
+.dropdown:hover .dropbtn {
+background-color: #111111;
+} /* this is how you edit the navbar BUTTON's hover */
+
+.dropdown-content:hover{
+background-color: #fF6600;
+}
+
+:root{
+  --clr-two: #000;
+}
+
+
+Why buy 10 mousepads, when we can help you find the right 1?
+
+MinMaxMagic.com curated educational content on esports peripherals.
+
+background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center center fixed;
+  background-blend-mode: darken;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+
+
+   /* .background__image{
+  image-rendering: crisp-edges;
+  size: 50%;
+} what do ?*/ 
+
+/*Research subpages and learn how to implement them to each category*/
