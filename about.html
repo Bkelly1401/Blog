@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Gaming mice - MinMaxMagic.com</title>
+    <title>About / contact page - MinMaxMagic.com</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Bradley Kelly">
@@ -16,14 +16,68 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
     <script src="./app.js"></script>
-    <mmm-navbar></mmm-navbar>
 </head>
-
-<body>
- 
+<body class="background__image">
+<header><mmm-navbar></mmm-navbar></header>
+<main>
+<h1 class="about__title">About us</h1>
+    <div class="about__container">
+    <div class="about__box">
+    <h1 class="about__text">Hey, my name is <span class="color__change">Inclement</span> I am the developer, writer, and designer for MinMaxMagic.com</h1>
+    <h1 class="about__text">This website is a passion project and as such is maintained in my own time outside of work, if you wish to show your support it would be greatly appreciated and you can do so in the bottom left</h1>
+    </div>
+    <div class="fq__box">
+    <h1>F&Q</h1>
+    <h1>Why should we  trust you?</h1>
+    <h2 class="color__change">I have been playing FPS games for 10 years, with 15,000 hours of experience I know what I'm talking about.</h2>
+    <h1>Who is this website for?</h1>
+    <h2 class="color__change">Anybody who wants to get more from their setup</h2>
+    <h1>Where do you get your information?</h1>
+    <h2 class="color__change">The best place to learn is Reddit, find the subreddit that caters to your topic and ask away.</h2>
+    <h1>How can I reach you?</h1>
+    <h2 class="color__change">Through the social media links in the footer or the contact form bellow when I've learned Nginx for the HTML form</h2>
+    </div>
+    <div class="contact__box">
+        <section class="contact-section">
+            <div class="contact-intro">
+              <h2 class="contact-title">Get in Touch</h2>
+              <p class="contact-description">
+                Fill out the form below and we'll get back to you as soon as possible.
+              </p>
+            </div>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="2ba1c531-9ded-48ce-9b65-58902b4c143e" />
+              <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+              <input type="hidden" name="from_name" value="My Website" />
+              <div class="form-group-container">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+                </div>
+            
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+                </div>
+              </div>
+              <button class="form-submit" type="submit">Send Message</button>
+            </form>
+          </section>
+    </div>
+</main> 
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+    kofiWidgetOverlay.draw('minmaxmagic', {
+     'type': 'floating-chat',
+     'floating-chat.donateButton.text': 'Support us',
+    'floating-chat.donateButton.background-color': 'transparent',
+    'floating-chat.donateButton.text-color': '#ffffff'
+     });
+    </script>
+<footer><mmm-footer></mmm-footer></footer>
 </body>
-
-<footer>
-    
-</footer>
 </html>

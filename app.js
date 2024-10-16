@@ -35,7 +35,6 @@ class mmmnavbar extends HTMLElement {
     this.innerHTML= `
       <footer class="footer">
         <img src="images/logo3.svg" width="500"></img>
-        <p>MinMaxMagic is a collective of information meant to help you make a purchase you won't regret in the confusing world of Esports gaming gear, enthusiast peripherals, and gaming junk.</p><br></br>
         <a href="https://x.com/MinMaxMagic" target="_blank" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -58,6 +57,7 @@ class mmmnavbar extends HTMLElement {
         </svg></a>
       </footer>`
     }
- }
+  }
+
 customElements.define('mmm-navbar', mmmnavbar)
 customElements.define('mmm-footer', mmmfooter)
