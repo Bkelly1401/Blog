@@ -12,7 +12,7 @@ class mmmnavbar extends HTMLElement {
               <a href="mousepads.html" class="nav__link">Mousepads</a>
            </li>
            <li class="nav__item">
-              <a href="mice.html" class="nav__link">Gaming mice</a>
+              <a href="mice.html" class="nav__link">Mice</a>
            </li>
            <li class="nav__item">
               <a href="keyboards.html" class="nav__link">Keyboards</a>
