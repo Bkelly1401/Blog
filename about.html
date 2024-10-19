@@ -17,7 +17,7 @@
     <link rel="manifest" href="images/site.webmanifest">
     <script src="./app.js"></script>
 </head>
-<body class="background__image">
+<body>
 <header>
     <mmm-navbar></mmm-navbar>
 </header>
@@ -37,7 +37,7 @@
     <h1>Where do you get your information?</h1>
     <h2 class="color__change">The best place to learn is Reddit, find the subreddit that caters to your topic and ask away.</h2>
     <h1>How can I reach you?</h1>
-    <h2 class="color__change">Through the social media links in the footer or the contact form bellow when I've learned Nginx for the HTML form</h2>
+    <h2 class="color__change">Through the social media links or the contact form beneath this F&Q</h2>
     </div>
     <div class="contact__box">
         <section class="contact-section">
@@ -72,14 +72,21 @@
     </div>
 </main> 
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-    <script>
-    kofiWidgetOverlay.draw('minmaxmagic', {
-     'type': 'floating-chat',
-     'floating-chat.donateButton.text': 'Support us',
-    'floating-chat.donateButton.background-color': 'transparent',
-    'floating-chat.donateButton.text-color': '#ffffff'
-     });
-    </script>
+<script>
+  kofiWidgetOverlay.draw('minmaxmagic', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Donate',
+      'floating-chat.donateButton.background-color': 'transparent',
+      'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>   
+<style>
+  .floatingchat-container-wrap { left: unset; right: 50px; width: 50%; }
+  .floatingchat-container-wrap-mobi { left: unset; right: 50px; width: 50%;}
+  .floating-chat-kofi-popup-iframe { left: unset; right: 50px; }
+  .floating-chat-kofi-popup-iframe-mobi { left: unset; right: 50px; }
+  .floating-chat-kofi-popup-iframe-closer-mobi { left: unset; right: 50px; }
+</style>
 <footer>
     <mmm-footer></mmm-footer>
 </footer>

@@ -36,12 +36,28 @@ h3 {
   list-style-type: none;
 }
 
-  .footer{
+  .footer__container{
+    display:flex;
     position: relative;
     width: 100vw;
-    background-color: #080808;
+    background-color: transparent;
     bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    border-top: 1px dotted #ff6600;
 }
+.footer__contact{
+  display:flex;
+  flex-direction: column;
+}
+
+.footer__logo__slogan{
+  margin: 2rem;
+  max-width: 500px;
+}
+
   .header {
     background: transparent;
     margin-bottom: 1rem;
@@ -245,9 +261,6 @@ h3 {
 }
   .about__text{
     margin-top: 1.5rem;
-}
-  .background__image{
-    background:url("images/background.png") center right / cover;
 }
   .fq__box, .about__box, .contact__box{
     flex: 0,0,1;
