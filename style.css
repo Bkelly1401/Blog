@@ -285,7 +285,7 @@ h3 {
     font-weight: 700;
 }
   .contact-description {
-    color: rgb(107 114 128);
+    color: rgb(255, 255, 255);
 }
   .form-group-container {
     display: grid;
@@ -301,7 +301,8 @@ h3 {
 }
   .form-input, .form-textarea {
     padding: 0.5rem;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #ff6600;
+    background-color: transparent;
     display: flex;
     height: 2.5rem;
     width: 100%;
@@ -310,14 +311,15 @@ h3 {
     line-height: 1.25rem;
 }
   .form-input::placeholder, .form-textarea:focus-visible {
-    color: #6b7280;
+    color: #ffffff;
 }
   .form-input:focus-visible, .form-textarea:focus-visible {
-    outline: 2px solid #2563eb;
+    outline: 2px solid #FF6600;
     outline-offset: 2px;
 }
   .form-textarea {
     min-height: 120px;
+    color:#ffffff;
 }
   .form-submit {
     width: 100%;
@@ -327,4 +329,12 @@ h3 {
     color: #fff;
     padding: 13px 5px;
     border-radius: 0.375rem;
+}
+.form-submit:hover{
+color:#ff6600;
+cursor: pointer;
+}
+
+.form-input{
+  color: #FFF;
 }

@@ -206,3 +206,12 @@ background-size: cover;
     border-radius: 1rem;
     background-image: linear-gradient(to bottom right,#ff6600, #ff8533, #ff6600);
   }//gradient for buttons
+
+
+  function FormValidation() {
+  let x = document.forms[".contact-form"][".form-textarea"].value;
+  if (x == "") {
+    alert("You forgot something");
+    return false;
+  }
+} //Javascript form validation form not working
