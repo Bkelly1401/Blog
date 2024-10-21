@@ -1,3 +1,60 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('.contact-form');
+
+  form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const message = document.getElementById('message');
+
+      clearErrors();
+
+      let isValid = true;
+
+      if (name.value.trim() === '') {
+          displayError(name, 'We need your name so that we can personalize our response to you.');
+          isValid = false;
+      }
+
+      if (!validateEmail(email.value)) {
+          displayError(email, 'We need your email address so that we can respond to you.');
+          isValid = false;
+      }
+
+      if (message.value.trim() === '') {
+          displayError(message, 'We need you to fill out this field so that what we know how we can help you.');
+          isValid = false;
+      }
+
+      if (isValid) {
+          form.submit();
+      }
+  });
+
+  function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(String(email).toLowerCase());
+  }
+
+  function displayError(input, message) {
+      input.classList.add('error'); 
+
+      const errorDiv = document.createElement('div');
+      errorDiv.className = 'error__message';
+      errorDiv.textContent = message;
+      input.parentElement.appendChild(errorDiv);
+  }
+
+  function clearErrors() {
+      const errorMessages = document.querySelectorAll('.error__message');
+      errorMessages.forEach(msg => msg.remove());
+
+      const inputs = document.querySelectorAll('.form-input, .form-textarea');
+      inputs.forEach(input => input.classList.remove('error'));
+    }
+  });
+
 class mmmnavbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -30,7 +87,7 @@ class mmmnavbar extends HTMLElement {
       `
     }
 }
- class mmmfooter extends HTMLElement {
+class mmmfooter extends HTMLElement {
     connectedCallback() {
     this.innerHTML= `
 <footer class="footer__container">

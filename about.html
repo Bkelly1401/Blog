@@ -1,93 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>About / contact page - MinMaxMagic.com</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Bradley Kelly">
-    <meta name="description" content="Gaming mouse discussion, weight, mousefeet, censors, grip style, comfort, and how to pick a mouse that fits you well.">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css" integrity="sha512-tpsEzNMLQS7w9imFSjbEOHdZav3/aObSESAL1y5jyJDoICFF2YwEdAHOPdOr1t+h8hTzar0flphxR76pd0V1zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <script src="./app.js"></script>
-</head>
-<body>
-<header>
-    <mmm-navbar></mmm-navbar>
-</header>
-<main>
-    <h1 class="about__title">About us</h1>
-    <div class="about__container">
-    <div class="about__box">
-    <h1 class="about__text">Hey, my name is <span class="color__change">Inclement</span> I am the developer, writer, and designer for MinMaxMagic.com</h1>
-    <h1 class="about__text">This website is a passion project and as such is maintained in my own time outside of work, if you wish to show your support it would be greatly appreciated and you can do so in the bottom left</h1>
-    </div>
-    <div class="fq__box">
-    <h1>F&Q</h1>
-    <h1>Why should we  trust you?</h1>
-    <h2 class="color__change">I have been playing FPS games for 10 years, with 15,000 hours of experience I know what I'm talking about.</h2>
-    <h1>Who is this website for?</h1>
-    <h2 class="color__change">Anybody who wants to get more from their setup</h2>
-    <h1>Where do you get your information?</h1>
-    <h2 class="color__change">The best place to learn is Reddit, find the subreddit that caters to your topic and ask away.</h2>
-    <h1>How can I reach you?</h1>
-    <h2 class="color__change">Through the social media links or the contact form beneath this F&Q</h2>
-    </div>
-    <div class="contact__box">
-        <section class="contact-section">
-            <div class="contact-intro">
-              <h2 class="contact-title">Contact us</h2>
-              <p class="contact-description">
-                If you need to get in touch, fill out the form and we'll get back to you as soon as possible.
-              </p>
-            </div>
-            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-              <input type="hidden" name="access_key" value="2ba1c531-9ded-48ce-9b65-58902b4c143e" />
-              <input type="hidden" name="subject" value="New email @MinMaxMagic.com" />
-              <input type="hidden" name="from_name" value="My Website" />
-              <div class="form-group-container">
-                <div class="form-group">
-                  <label for="name" class="form-label">Name</label>
-                  <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
-                </div>
-                <div class="form-group">
-                  <label for="email" class="form-label">Email</label>
-                  <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
-                </div>
-                <div class="form-group">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
-                </div>
-              </div>
-              <button class="form-submit" type="submit">Send Message</button>
-            </form>
-          </section>
-    </div>
-</main> 
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('minmaxmagic', {
-      'type': 'floating-chat',
-      'floating-chat.donateButton.text': 'Donate',
-      'floating-chat.donateButton.background-color': 'transparent',
-      'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>   
-<style>
-  .floatingchat-container-wrap { left: unset; right: 50px; width: 50%; }
-  .floatingchat-container-wrap-mobi { left: unset; right: 50px; width: 50%;}
-  .floating-chat-kofi-popup-iframe { left: unset; right: 50px; }
-  .floating-chat-kofi-popup-iframe-mobi { left: unset; right: 50px; }
-  .floating-chat-kofi-popup-iframe-closer-mobi { left: unset; right: 50px; }
-</style>
-<footer>
-    <mmm-footer></mmm-footer>
-</footer>
-</body>
+   <head>
+      <title>About / contact page - MinMaxMagic.com</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Bradley Kelly">
+      <meta name="description" content="Gaming mouse discussion, weight, mousefeet, censors, grip style, comfort, and how to pick a mouse that fits you well.">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css" integrity="sha512-tpsEzNMLQS7w9imFSjbEOHdZav3/aObSESAL1y5jyJDoICFF2YwEdAHOPdOr1t+h8hTzar0flphxR76pd0V1zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="images/site.webmanifest">
+   </head>
+   <body>
+      <header>
+         <mmm-navbar></mmm-navbar>
+      </header>
+      <main>
+         <h1 class="about__title">About us</h1>
+         <div class="about__container">
+         <div class="about__box">
+            <h1 class="about__text">Hey, my name is <span class="color__change">Inclement</span> I am the developer, writer, and designer for MinMaxMagic.com</h1>
+            <h1 class="about__text">This website is a passion project and as such is maintained in my own time outside of work, if you wish to show your support it would be greatly appreciated and you can do so in the bottom left</h1>
+         </div>
+         <div class="fq__box">
+            <h1>F&Q</h1>
+            <h1>Why should we  trust you?</h1>
+            <h2 class="color__change">I have been playing FPS games for 10 years, with 15,000 hours of experience I know what I'm talking about.</h2>
+            <h1>Who is this website for?</h1>
+            <h2 class="color__change">Anybody who wants to get more from their setup</h2>
+            <h1>Where do you get your information?</h1>
+            <h2 class="color__change">The best place to learn is Reddit, find the subreddit that caters to your topic and ask away.</h2>
+            <h1>How can I reach you?</h1>
+            <h2 class="color__change">Through the social media links or the contact form beneath this F&Q</h2>
+         </div>
+         <div class="contact__box">
+              <!-- <section class="contact__information"> 
+              <p>urd</p> (adds a section here, revisit if necessary)-->
+            </section>
+            <section class="contact-section">
+               <div class="contact-intro">
+                  <h2 class="contact-title">Contact us</h2>
+                  <p class="contact-description">If you need to get in touch, fill out the form and we'll get back to you as soon as possible.</p>
+               </div>
+               <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                  <input type="hidden" name="access_key" value="2ba1c531-9ded-48ce-9b65-58902b4c143e" />
+                  <input type="hidden" name="subject" value="New email @MinMaxMagic.com" />
+                  <input type="hidden" name="from_name" value="My Website" />
+                  <div class="form-group-container">
+                     <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" required/>
+                     </div>
+                     <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" name="email" class="form-input" placeholder="Your email address" type="email" required/>
+                     </div>
+                     <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-textarea" id="message" name="message" placeholder="Enter your message" required></textarea>
+                     </div>
+                  </div>
+                  <div class="button-container">
+                     <button class="form-submit" type="submit">Get in touch</button>
+                  </div>
+               </form>
+            </section>
+         </div>
+      </main>
+      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+      <script>
+         kofiWidgetOverlay.draw('minmaxmagic', {
+             'type': 'floating-chat',
+             'floating-chat.donateButton.text': 'Donate',
+             'floating-chat.donateButton.background-color': 'transparent',
+             'floating-chat.donateButton.text-color': '#fff'
+         });
+      </script>   
+      <style>
+         .floatingchat-container-wrap { left: unset; right: 50px; width: 50%; }
+         .floatingchat-container-wrap-mobi { left: unset; right: 50px; width: 50%;}
+         .floating-chat-kofi-popup-iframe { left: unset; right: 50px; }
+         .floating-chat-kofi-popup-iframe-mobi { left: unset; right: 50px; }
+         .floating-chat-kofi-popup-iframe-closer-mobi { left: unset; right: 50px; }
+      </style>
+      <footer>
+         <mmm-footer></mmm-footer>
+      </footer>
+      <script src="./app.js"></script>
+   </body>
 </html>
