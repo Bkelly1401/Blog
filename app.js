@@ -54,6 +54,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  const words = ["Mousepad", "Mouse", "Keyboard", "Headphone"];
+  let wordIndex = 0;
+  const animatedWord = document.getElementById("animated__word");
+  
+  function changeWord() {
+      animatedWord.classList.add("slide__up");
+    
+      setTimeout(() => {
+          wordIndex = (wordIndex + 1) % words.length;
+          animatedWord.textContent = words[wordIndex];
+          animatedWord.classList.remove("slide__up");
+          animatedWord.classList.add("slide__down");
+      }, 500); 
+  }
+  setInterval(changeWord, 2000); //alter delay
+
+  
 class mmmnavbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `

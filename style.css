@@ -137,9 +137,9 @@ h3 {
 
 }
 /* Index specific CSS under here */
-.home__background{
+/* .home__background{
 
-}
+} */
   .h1__effects{
     margin-bottom: 1rem;
 }
@@ -207,7 +207,45 @@ h3 {
   font-size: 1.5rem;
   color: #FF6600;
 }
+.word__container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden; 
+  height: 1.2em;
+  width: 16rem;
+  line-height: 3.3rem;
+  vertical-align: middle;
+  text-align: right;
+}
+#animated__word {
+  display: inline-block;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 1;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.slide__up {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.slide__down {
+  transform: translateY(100%);
+  opacity: 0;
+}
+#animated__word:not(.slide__up) {
+  animation: slide-up-animation 0.5s forwards;
+}
 
+@keyframes slide-up-animation {
+  0% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
 
   .hero__continuation{
     display:flex;
