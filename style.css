@@ -81,6 +81,11 @@ h3 {
     margin-right: auto; /* this is keeping the logo from sticking center, look at later */
     margin-left: 2rem;
 }
+
+.logo:hover{
+ fill:#FF6600;
+ transition: fill .2s ease;
+}
   .nav__list {
     display: flex;
     margin-right: 2rem; /*this is keeping the nav list from going right fix later*/
@@ -153,9 +158,9 @@ h3 {
     max-height: 600px;
     height: auto;
 }
-  .h2__effects:hover{
-    transform: scale(1.3);
-}
+  /*.h2__effects:hover{
+     transform: scale(1.3); cooling off of animations for now
+} */
   .color__change{
     color:#ff6600
 }
@@ -299,7 +304,7 @@ h3 {
   }
 
   100% {
-    transform:   translateX(0);
+    transform: translateX(0);
   }
 }
 /* About page specific css here */

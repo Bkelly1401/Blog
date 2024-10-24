@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  const words = ["Mousepad", "Mouse", "Keyboard", "Headphone"];
+  const words = ["Mousepad", "Keyboard", "Headphone"];
   let wordIndex = 0;
   const animatedWord = document.getElementById("animated__word");
   
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
           animatedWord.classList.add("slide__down");
       }, 500); 
   }
-  setInterval(changeWord, 2000); //alter delay
+  setInterval(changeWord, 500); //alter delay
 
   
 class mmmnavbar extends HTMLElement {
