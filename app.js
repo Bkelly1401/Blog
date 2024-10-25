@@ -68,9 +68,16 @@ document.addEventListener('DOMContentLoaded', function () {
           animatedWord.classList.add("slide__down");
       }, 500); 
   }
-  setInterval(changeWord, 500); //alter delay
+  setInterval(changeWord, 2000); //alter delay
 
-  
+const scrollIncentive = document.getElementById('scrollIncentive');
+const targetSection = document.getElementById('Incentive__destination');
+
+scrollIncentive.addEventListener('click', function() {
+  targetSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+
 class mmmnavbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `

@@ -307,6 +307,9 @@ h3 {
     transform: translateX(0);
   }
 }
+.scroll__incentive {
+  cursor: pointer;
+}
 /* About page specific css here */
   .about__title{
     margin: 2rem;
