@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('.contact-form');
+  
+  if (form) {
   form.addEventListener('submit', function (event) {
       event.preventDefault();
 
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
           form.submit();
       }
   });
-
+}
   function validateEmail(email) {
       const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return re.test(String(email).toLowerCase());
@@ -56,8 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const words = ["Mousepad", "Keyboard", "Headphone"];
   let wordIndex = 0;
-  const animatedWord = document.getElementById("animated__word");
+  const animatedWord = document.getElementById("animated__word")
   
+  if (window.location.pathname === "/index.html") {
   function changeWord() {
       animatedWord.classList.add("slide__up");
     
@@ -67,15 +70,18 @@ document.addEventListener('DOMContentLoaded', function () {
           animatedWord.classList.remove("slide__up");
           animatedWord.classList.add("slide__down");
       }, 500); 
+    }
   }
   setInterval(changeWord, 2000); //alter delay
 
 const scrollIncentive = document.getElementById('scrollIncentive');
 const targetSection = document.getElementById('Incentive__destination');
 
+if (window.location.pathname === "/index.html") {
 scrollIncentive.addEventListener('click', function() {
   targetSection.scrollIntoView({ behavior: 'smooth' });
 });
+}
 
 
 class mmmnavbar extends HTMLElement {
