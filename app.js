@@ -82,6 +82,11 @@ scrollIncentive.addEventListener('click', function() {
   targetSection.scrollIntoView({ behavior: 'smooth' });
 });
 }
+document.querySelector('.scroll__incentive').addEventListener('click', function () {
+  document.querySelector('#incentive__destination').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
 
 
 class mmmnavbar extends HTMLElement {
