@@ -74,20 +74,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   setInterval(changeWord, 2000); //alter delay
 
+
+document.addEventListener('DOMContentLoaded', function() {
 const scrollIncentive = document.getElementById('scrollIncentive');
-const targetSection = document.getElementById('Incentive__destination');
+const targetSection = document.getElementById('IncentiveDestination');
 
 if (window.location.pathname === "/index.html") {
-scrollIncentive.addEventListener('click', function() {
-  targetSection.scrollIntoView({ behavior: 'smooth' });
-});
-}
-document.querySelector('.scroll__incentive').addEventListener('click', function () {
-  document.querySelector('#incentive__destination').scrollIntoView({
-    behavior: 'smooth'
+  scrollIncentive.addEventListener('click', function() {
+    targetSection.scrollIntoView({ behavior: 'smooth' });
   });
+  }
 });
-
 
 class mmmnavbar extends HTMLElement {
   connectedCallback() {
