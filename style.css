@@ -149,7 +149,8 @@ h3 {
     width: 90%;
     height: 50rem;
     margin: auto;
-    margin-top: 15rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
     border-radius: 1.5rem;
     border: none;
     background-color: rgba(3, 3, 3,100);
