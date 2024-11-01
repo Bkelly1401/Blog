@@ -141,19 +141,34 @@ h3 {
     font-size: 1.5rem;
     color: #FF6600;
 }
-  .cta__container{
+  .cta__container, .mousecta__container{
     display:flex;
     flex-direction: column;
-    width: 90%;
-    height: 50rem;
-    margin: 10rem auto 5rem;
-    border-radius: 1.5rem;
     background-color: rgba(3, 3, 3,100);
     position: relative;
     justify-content: center;
-    padding: 20px;
+    flex-wrap: wrap;
 }
-  .cta__container::before, .cta_container::after{
+  .cta__container{
+    width: 90%;
+    height: 50rem;
+    margin: 10rem auto 5rem;
+    padding: 20px;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+  .cta__text h2 {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+  .cta__text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .cta__container::before, .cta_container::after, .mousecta__container::before, .mousecta__container::after{
     content:'';
     position: absolute;
     height: 100%;
@@ -170,13 +185,13 @@ h3 {
     filter: blur(1rem);
     opacity: 1;
   } revisit if I want blur*/
-.cta__text{
-  width: 50%;
-  height: 100%;
-  max-width: 600px;
-  position: absolute;
-  transform: translateY(30%);
-  line-height: 1;
+  .cta__text{
+    width: 50%;
+    height: 100%;
+    max-width: 600px;
+    position: absolute;
+    transform: translateY(30%);
+    line-height: 1;
 }
 /*Part 2 of hero seperated so I can focus*/
 
@@ -411,6 +426,53 @@ h3 {
 
 /*Mice page*/
 
+  .mousecta__container{
+    width: 100%;
+    max-width: 90%;
+    height: 70rem;
+    margin: 10rem auto 5rem;
+    padding: 20px;
+    border-radius: 1.5rem;
+}
+  .mousecta__text, h1{
+    margin-bottom: 1%;
+}
+  .mousecta__text {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+  .mousecta__text p {
+    margin-bottom: 1.2em;
+    font-size: 1.1rem;
+}
+  .mousecta__text h2 {
+    font-size: 1.8rem;
+    color: #ff6600; 
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+  .mousecta__text a {
+    color: #ff6600;
+    font-weight: 600;
+}
+  .mousecta__text a:hover {
+    text-decoration: underline;
+}
+  .mousecta__text ul {
+    list-style-type: integer;
+    margin-bottom: 1.5em;
+}
+  .mousecta__text ul li {
+    margin-bottom: 0.5em;
+    font-size: 1.05rem;
+}
+  .mousecta__text ul li strong {
+    color: #FF6600;
+}
+
 /*Keyboards page*/
 
 /*Headphones page*/
@@ -519,3 +581,10 @@ h3 {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+
+
+
+
+
+
