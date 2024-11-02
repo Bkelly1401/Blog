@@ -1,4 +1,4 @@
-# MinMaxMagic
+# 
 This is a personal esports blog website I am creating to gain familiarity with the development process. 
 
 Previously I have built a few websites using C# and ASP.Net at university, but this will be my first project where I code from scratch and use Javascript.
