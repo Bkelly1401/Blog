@@ -8,7 +8,7 @@ html {
 }
 
 /* include at a later time*::before, *::after*/ 
-* {
+*{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -26,22 +26,25 @@ body{
   text-align: center;
   overflow-x: hidden;
 }
-h1 {
+h1{
   font-size: 3rem;
 }
-h2 {
+h2{
   font-size: 2rem;
 }
-h3 {
-  font-size: 1.5;
+h3{
+  font-size: 1.5rem;
  }
 ul{
   list-style-type: none;
 }
-u { 
+u{ 
   text-decoration: wavy underline #ff6600;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 /*Index page*/
 
   .hero__top{
@@ -436,16 +439,13 @@ u {
   .mousecta__container{
     width: 100%;
     max-width: 90%;
-    height: 70rem;
+    height: 160rem;
     margin: 10rem auto 5rem;
     padding: 20px;
     border-radius: 1.5rem;
 }
-  .mousecta__text, h1{
-    margin-bottom: 1%;
-}
   .mousecta__text {
-    max-width: 55%;
+    max-width: 50%;
     margin: 0 auto;
     padding: 20px;
     line-height: 1.6;
@@ -457,8 +457,8 @@ u {
 }
   .mousecta__text h2 {
     font-size: 1.8rem;
-    color: #ff6600; 
-    margin-bottom: 1em;
+    color: #ffffff; 
+    margin-bottom: 0.5rem;
     font-weight: 700;
 }
   .mousecta__text a {
