@@ -150,7 +150,7 @@ img {
   .scroll__container span:hover{
     transform:translateY(-10%)
 }
-  .cta__container, .mousecta__container{
+  .cta__container, .mousecta__container, .keyboard__container, .headphone__container, .mousepad__container{
     display: flex;
     flex-direction: column; 
     background-color: rgba(3, 3, 3,100);
@@ -167,7 +167,7 @@ img {
     border-radius: 1.5rem;
     text-align: center;
 }
-  .cta__container::before, .cta_container::after, .mousecta__container::before, .mousecta__container::after{
+  .cta__container::before, .cta_container::after, .mousecta__container::before, .mousecta__container::after, .keyboard__container::before, .keyboard__container::after, .headphone__container::after, .headphone__container::before, .mousepad__container::before, .mousepad__container::after{
     content:'';
     position: absolute;
     height: 100%;
@@ -432,8 +432,15 @@ img {
     font-size: 1rem;
 }
 
-/*Mousepads page*/
-
+/*Mousepads page*/      
+  .mousepad__container{
+    width: 100%;
+    max-width: 90%;
+    height: 160rem;
+    margin: 10rem auto 5rem;
+    padding: 20px;
+    border-radius: 1.5rem;
+}
 /*Mice page*/
 
   .mousecta__container{
@@ -481,9 +488,23 @@ img {
 }
 
 /*Keyboards page*/
-
+  .keyboard__container{
+    width: 100%;
+    max-width: 90%;
+    height: 160rem;
+    margin: 10rem auto 5rem;
+    padding: 20px;
+    border-radius: 1.5rem;
+}
 /*Headphones page*/
-
+.headphone__container{
+    width: 100%;
+    max-width: 90%;
+    height: 160rem;
+    margin: 10rem auto 5rem;
+    padding: 20px;
+    border-radius: 1.5rem;
+}
 /*Generic*/
 
   .header {
