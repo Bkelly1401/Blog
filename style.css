@@ -206,20 +206,20 @@ img {
       align-items: top;
       width: 100%;
       height: 35rem;
-      background-image: url("/images/background.png");
+      background-image: url("/images/background.png"); 
       background-size: cover;
       background-blend-mode: darken;
   }
     .followup__content{
-      flex: 1, 1, 1;
+      flex: 1, 1, 0;
       width: 100%;
       max-width: 90%;
       margin-top: 5rem;
-    }
+}
     .followup__content > p{
       margin-top: 1rem;
       font-size: 1.5rem;
-    }
+}
   .hero__mid {
     display: flex;
     flex-direction: column;

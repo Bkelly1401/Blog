@@ -244,3 +244,10 @@ Ideally what we would like to help you find is a mouse shape to use as a baselin
 
 After that there are some obvious concerns like cost, sensor, latency, availability, build quality, but for the sake of this guide we are going to focus on the three and assume every mouse is free, with the latest sensor, highest latency, and best build quality. We aren’t looking to meet the 
 When it comes to mice money isn’t everything, something as cheap as the Razer Viper Mini could be our optimal mouse, or something as expensive as the Zaunkoenig M2K.
+
+
+Flex grow 1 fills out empty space
+Flex shrink 1
+Flex basis 0
+=
+Flex 1 1 0
