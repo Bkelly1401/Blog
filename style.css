@@ -200,25 +200,43 @@ img {
     margin-bottom: 1rem;
 }
 /*Part 2 of hero seperated so I can focus*/
-    .followup__container{
-      display: flex;
-      justify-content: center;
-      align-items: top;
-      width: 100%;
-      height: 35rem;
-      background-image: url("/images/background.png"); 
-      background-size: cover;
-      background-blend-mode: darken;
-  }
-    .followup__content{
-      flex: 1, 1, 0;
-      width: 100%;
-      max-width: 90%;
-      margin-top: 5rem;
+  .followup__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 100%;
+    padding: 3rem;
+    background-image: url("/images/background.svg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    flex-wrap: wrap;
 }
-    .followup__content > p{
-      margin-top: 1rem;
-      font-size: 1.5rem;
+  .followup__image {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 15rem;
+}
+  .followup__content {
+    flex: 1 1 0;
+    max-width: 700px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15rem;
+}
+  .followup__content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+  .followup__content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+  .followup__content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
   .hero__mid {
     display: flex;
