@@ -164,7 +164,7 @@ img {
     height: 60rem;
     margin: 10rem auto 5rem;
     padding: 20px;
-    border-radius: 1.5rem;
+    border-radius: 0.625rem;
     text-align: center;
 }
   .cta__container::before, .cta_container::after, .mousecta__container::before, .mousecta__container::after, .keyboard__container::before, .keyboard__container::after, .headphone__container::after, .headphone__container::before, .mousepad__container::before, .mousepad__container::after{
@@ -172,7 +172,7 @@ img {
     position: absolute;
     height: 100%;
     width: 100%;
-    border-radius: 1.5rem;
+    border-radius: 0.625rem;
     background-image: conic-gradient(#ff6600, #ff8533, #ff6600);
     top: 50%;
     left: 50%;
@@ -324,7 +324,7 @@ img {
     width: 90%;
     height: 150rem;
     margin: 4rem 5rem 5rem 5rem;
-    border-radius: 1.5rem;
+    border-radius: 0.625rem;
     border: none;
     background-color: rgba(3, 3, 3,100);
     position: relative;
@@ -335,7 +335,7 @@ img {
     position: absolute;
     height: 100%;
     width: 100%;
-    border-radius: 1.5rem;
+    border-radius: 0.625rem;
     background-image: conic-gradient(#ff6600, #ff8533, #ff6600);
     top: 50%;
     left: 50%;
@@ -352,7 +352,7 @@ img {
 }
   .fq__box, .about__box, .contact__box{
     flex: 0,0,1;
-    border-radius: 1rem; 
+    border-radius: 0.625rem; 
     width: 100%;
     border: 0.1rem solid #fF6600; 
 }
@@ -472,7 +472,7 @@ img {
     height: 160rem;
     margin: 10rem auto 5rem;
     padding: 20px;
-    border-radius: 1.5rem;
+    border-radius: 0.625rem;
 }
 /*Mice page*/
 
@@ -482,7 +482,7 @@ img {
     height: 160rem;
     margin: 10rem auto 5rem;
     padding: 20px;
-    border-radius: 1.5rem;
+    border-radius: 0.625rem;
 }
   .mousecta__text {
     max-width: 50%;
@@ -527,7 +527,7 @@ img {
     height: 160rem;
     margin: 10rem auto 5rem;
     padding: 20px;
-    border-radius: 1.5rem;
+    border-radius: 0.625rem;
 }
 /*Headphones page*/
 .headphone__container{
@@ -536,7 +536,7 @@ img {
     height: 160rem;
     margin: 10rem auto 5rem;
     padding: 20px;
-    border-radius: 1.5rem;
+    border-radius: 0.625rem;
 }
 /*Generic*/
 
