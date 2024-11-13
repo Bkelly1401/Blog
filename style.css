@@ -47,7 +47,7 @@ img {
 }
 /*Index page*/
 
-  .hero__top{
+  .home__hero{
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -56,7 +56,7 @@ img {
     min-height: 850px;
     position: relative;
 }
-  .hero__top__content{
+  .home__hero__content{
     width: 100%;
     height: 100vh;
     max-height: 700px;
@@ -200,6 +200,16 @@ img {
     margin-bottom: 1rem;
 }
 /*Part 2 of hero seperated so I can focus*/
+  .home__followup {
+    /* display:flex fix this and space out*/
+    width:100%;
+    height: 100%;
+    max-height: 2500px;
+    margin-top: 15rem;
+    background-image: url("/images/background.png");
+    background-size: fill;
+}
+
   .followup__container {
     display: flex;
     justify-content: center;
@@ -207,10 +217,6 @@ img {
     gap: 3rem;
     width: 100%;
     padding: 3rem;
-    background-image: url("/images/background.svg");
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: darken;
     flex-wrap: wrap;
 }
   .followup__image {
@@ -219,26 +225,26 @@ img {
     max-width: 300px;
     margin-left: 15rem;
 }
-  .followup__content {
+  .followup__headings {
     flex: 1 1 0;
     max-width: 700px;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 15rem;
 }
-  .followup__content h1 {
+  .followup__headings h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-  .followup__content h2 {
+  .followup__headings h2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
-  .followup__content h3 {
+  .followup__headings h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-  .hero__mid {
+  .home__mid {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,7 +253,7 @@ img {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
-  .hero__mid > div{
+  .home__mid > div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -626,7 +632,7 @@ img {
 }
 }
 @media(max-width: 1526px) {
-  .hero__top{
+  .home__hero__content{
     flex-direction: column;
     align-items: center;
     justify-content: center;
