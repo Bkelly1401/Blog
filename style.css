@@ -45,6 +45,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /*Index page*/
 
   .home__hero{
@@ -150,67 +151,19 @@ img {
   .scroll__container span:hover{
     transform:translateY(-10%)
 }
-  .cta__container, .mousecta__container, .keyboard__container, .headphone__container, .mousepad__container{
-    display: flex;
-    flex-direction: column; 
-    background-color: rgba(3, 3, 3,100);
-    position: relative;
-    justify-content: center;
-    align-items: left;
-    flex-wrap: wrap;
-}
-  .cta__container{
-    width: 90%;
-    height: 60rem;
-    margin: 10rem auto 5rem;
-    padding: 20px;
-    border-radius: 0.625rem;
-    text-align: center;
-}
-  .cta__container::before, .cta_container::after, .mousecta__container::before, .mousecta__container::after, .keyboard__container::before, .keyboard__container::after, .headphone__container::after, .headphone__container::before, .mousepad__container::before, .mousepad__container::after{
-    content:'';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 0.625rem;
-    background-image: conic-gradient(#ff6600, #ff8533, #ff6600);
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    padding: 5px;
-}
-  .cta__text, .cta__cards{
-    flex:0,0,1;
-    width: 50%;
-    height: 100%;
-    max-width: 300px;
-    position: absolute;
-    line-height: 1;
-    display: block;
-}
-  .cta__text h2 {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-  .cta__text p {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 1rem;
-}
 /*Part 2 of hero seperated so I can focus*/
   .home__followup {
     /* display:flex fix this and space out*/
     width:100%;
     height: 100%;
-    max-height: 2500px;
-    margin-top: 15rem;
-    background-image: url("/images/background.png");
-    background-size: fill;
+    min-height: 1500px;
+    margin: 0 15rem 15rem 0;
+    background:repeating-linear-gradient(90deg,
+     #0000 0 calc((100% - 5*5px)/6),
+     rgb(9, 9, 9)  0 calc((100% - 5*5px)/6 + 5px));
+    outline: dotted #ff6600;
 }
-
-  .followup__container {
+  .aboutme__container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -218,32 +171,65 @@ img {
     width: 100%;
     padding: 3rem;
     flex-wrap: wrap;
+    outline: dotted #ff6600;
 }
-  .followup__image {
+  .aboutme__image {
     flex: 0 0 auto;
     width: 100%;
     max-width: 300px;
     margin-left: 15rem;
+    background: #000;
 }
-  .followup__headings {
+  .aboutme__headings {
     flex: 1 1 0;
     max-width: 700px;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 15rem;
+    background-color: #000;
 }
-  .followup__headings h1 {
+  .aboutme__headings h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-  .followup__headings h2 {
+  .aboutme__headings h2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
-  .followup__headings h3 {
+  .aboutme__headings h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+/*Container for image explaining website*/
+  .cta__container{
+  width: 90%;
+  height: 30rem;
+  margin: 10rem auto 5rem;
+  padding: 20px;
+  border-radius: 0.625rem;
+  text-align: center;
+  outline: dotted #ff6600;
+}
+  .cta__text, .cta__cards{
+  flex:0,0,1;
+  width: 50%;
+  height: 100%;
+  max-width: 300px;
+  position: absolute;
+  line-height: 1;
+  display: block;
+}
+  .cta__text h2 {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+  .cta__text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+/*final content before the end of page*/
   .home__mid {
     display: flex;
     flex-direction: column;
@@ -551,6 +537,29 @@ img {
     margin-bottom: 1rem;
   /* border-bottom: 0.1rem solid #ff6600; shows edges of header*/
 }
+  .mousecta__container, .keyboard__container, .headphone__container, .mousepad__container{
+    display: flex;
+    flex-direction: column; 
+    background-color: rgba(3, 3, 3,100);
+    position: relative;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+}
+  .mousecta__container::before, .mousecta__container::after, .keyboard__container::before, .keyboard__container::after, .headphone__container::after, .headphone__container::before, .mousepad__container::before, .mousepad__container::after{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.625rem;
+    background-image: conic-gradient(#ff6600, #ff8533, #ff6600);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+}
+
   .header__content{
     display: flex;
     align-items: center;
