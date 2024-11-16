@@ -251,3 +251,17 @@ Flex shrink 1
 Flex basis 0
 =
 Flex 1 1 0
+
+
+<h1>My name is Inclement, I'm a high elo FPS player with 15,000 hours of experience.</h1>
+           <h2>I found the perfect setup for me, and created MinMaxMagic to share what I learned with you.</h2>
+           
+           <img class="aboutme__image" src="images/proof.svg" alt="Evidence of achieving high ranks">
+
+             .aboutme__image {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 15rem;
+    background: #000;
+}

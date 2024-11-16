@@ -165,69 +165,55 @@ img {
 }
   .aboutme__container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
+    justify-content: space-between;
     width: 100%;
-    padding: 3rem;
-    flex-wrap: wrap;
+    padding: 5rem;
     outline: dotted #ff6600;
-}
-  .aboutme__image {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 300px;
-    margin-left: 15rem;
-    background: #000;
-}
-  .aboutme__headings {
-    flex: 1 1 0;
-    max-width: 700px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 15rem;
     background-color: #000;
 }
-  .aboutme__headings h1 {
+  .left__heading, .right__heading{
+    flex: 0,0,1;
+    width: 100%
+} 
+  .left__heading{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+  .right__heading{
     font-size: 2rem;
-    margin-bottom: 1rem;
-}
-  .aboutme__headings h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-}
-  .aboutme__headings h3 {
-    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 /*Container for image explaining website*/
   .cta__container{
-  width: 90%;
-  height: 30rem;
-  margin: 10rem auto 5rem;
-  padding: 20px;
-  border-radius: 0.625rem;
-  text-align: center;
-  outline: dotted #ff6600;
+    width: 90%;
+    justify-content: space-between;
+    align-items: space-between;
+    max-width: 1000px;
+    height: 30rem;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0.625rem;
+    text-align: center;
+    background-color: rgba(3, 3, 3,100);
 }
   .cta__text, .cta__cards{
-  flex:0,0,1;
-  width: 50%;
-  height: 100%;
-  max-width: 300px;
-  position: absolute;
-  line-height: 1;
-  display: block;
+    flex:0,0,1;
+    width: 50%;
+    height: 100%;
+    max-width: 300px;
+    position: absolute;
+    line-height: 1;
+    display: block;
 }
   .cta__text h2 {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
   .cta__text p {
-  font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
 }
 /*final content before the end of page*/
   .home__mid {
