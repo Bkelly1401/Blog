@@ -202,12 +202,12 @@ img {
 }
 /*Container for image explaining website*/
   .cta__container{
-   display:flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   max-height: 80rem;
-   padding: 5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 80rem;
+    padding: 5rem;
 }
   .cta__card{
     flex: 0,0,1;
@@ -449,19 +449,42 @@ img {
 
 /*Mousepads page*/      
   .mousepad__container{
+    display: flex;
+    justify-content: top;
+    align-items: center;
     width: 100%;
     max-width: 90%;
-    height: 160rem;
-    margin: 10rem auto 5rem;
+    height: 200rem;
+    margin: 10rem 5rem;
     padding: 20px;
     border-radius: 0.625rem;
+    flex-direction: column; 
+    background-color: rgba(3, 3, 3,100);
+}
+  .mousepad__headings{
+    flex: 0 0 1;
+    width: 100%;
+    position: relative;
+    margin: 5rem;
+    padding: 5rem;
+}
+  .mousepad__headings::after{
+    content: '';
+    position: absolute;
+    bottom: 0;   
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;               
+    width: 90%;
+    height: 3px;                   
+    background-image: linear-gradient(to right, #ff6600, #ff8533, #ff6600);
 }
 /*Mice page*/
 
   .mousecta__container{
     width: 100%;
     max-width: 90%;
-    height: 160rem;
+    height: 200rem;
     margin: 10rem auto 5rem;
     padding: 20px;
     border-radius: 0.625rem;
@@ -527,7 +550,7 @@ img {
     margin-bottom: 1rem;
   /* border-bottom: 0.1rem solid #ff6600; shows edges of header*/
 }
-  .mousecta__container, .keyboard__container, .headphone__container, .mousepad__container{
+  .mousecta__container, .keyboard__container, .headphone__container{
     display: flex;
     flex-direction: column; 
     background-color: rgba(3, 3, 3,100);
@@ -536,7 +559,7 @@ img {
     align-items: left;
     flex-wrap: wrap;
 }
-  .mousecta__container::before, .mousecta__container::after, .keyboard__container::before, .keyboard__container::after, .headphone__container::after, .headphone__container::before, .mousepad__container::before, .mousepad__container::after{
+  .mousecta__container::before, .mousecta__container::after, .keyboard__container::before, .keyboard__container::after, .headphone__container::after, .headphone__container::before{
     content:'';
     position: absolute;
     height: 100%;
