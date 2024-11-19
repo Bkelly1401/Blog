@@ -8,17 +8,19 @@ html {
 }
 
 /* include at a later time*::before, *::after*/ 
+:root{
+  color-scheme: light dark;
+}
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: inherit;
   letter-spacing: normal;
 }
 body{
-  background-color: rgb(0, 0, 0);
-  color:#ffffff;
+  background-color: light-dark(white, black);
+  color: light-dark(black, white); /*think on this some more*/
   min-width: 100vw;
   min-height: 100vh;
   position: relative;    
@@ -583,12 +585,13 @@ img {
     height: 3rem;
 }
   .logo__img {
+    margin-top: 0.3rem;
+    padding-left:3.2vh;
     height: 1.5rem;
     display: block;
 }
   .logo {
     margin-right: auto; /* this is keeping the logo from sticking center, look at later */
-    margin-left: 2rem;
 }
   .logo:hover{
     fill:#FF6600;
@@ -596,13 +599,15 @@ img {
 }
   .nav__list {
     display: flex;
-    margin-right: 2rem; /*this is keeping the nav list from going right fix later*/
+    margin-right: 5rem; /*this is keeping the nav list from going right fix later*/
 }
   .nav__link {
-    padding: 1rem 1rem;
+    padding-left: 1.6vh;
+    padding-right: 1.6vh;
+    color: inherit;
+    font-size: 1.2rem;
 }
   .nav__item{
-    margin: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
