@@ -466,21 +466,16 @@ img {
   .mousepad__headings{
     flex: 0 0 1;
     width: 100%;
+    max-width: 50%;
     position: relative;
     margin: 5rem;
     padding: 5rem;
 }
-  .mousepad__headings::after{
-    content: '';
-    position: absolute;
-    bottom: 0;   
-    left: 50%;
-    transform: translateX(-50%);
-    right: 0;               
-    width: 90%;
-    height: 3px;                   
-    background-image: linear-gradient(to right, #ff6600, #ff8533, #ff6600);
+.mousepad__headings > p{
+  margin-bottom: 1.2em;
+  font-size: 1.1rem;
 }
+ 
 /*Mice page*/
 
   .mousecta__container{
