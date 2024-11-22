@@ -533,12 +533,18 @@ img {
 }
 /*Headphones page*/
 .headphone__container{
+    display: flex;
+    justify-content: top;
+    align-items: center;
     width: 100%;
     max-width: 90%;
     height: 160rem;
     margin: 10rem auto 5rem;
     padding: 20px;
     border-radius: 0.625rem;
+}
+.headphone__headings{
+  width: 90%;
 }
 /*Generic*/
 
