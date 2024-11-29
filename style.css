@@ -575,7 +575,6 @@ img {
     z-index: -1;
     padding: 5px;
 }
-
   .header__content{
     display: flex;
     align-items: center;
@@ -639,6 +638,13 @@ img {
     margin: 2rem;
     max-width: 500px;
 }
+  .divider__line{
+    background-color: #ffffff; 
+    height: 3px; 
+  }
+  .divider__paragraph{
+    padding-bottom: 2rem;
+  }
 /*Media section for reactivity*/
 
 @media(max-width: 864px){
